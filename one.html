@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+    <div class="form-container">
+        <form  action="" >
+            <table cellspacing="20px">
+                <tr>
+                    <td><label class="name">Enter Name:</label></td>
+                    <td><input type="text" name="" id="name" placeholder="Enter the name"></td>
+                </tr>
+                <tr>
+                    <td><label class="name">Enter Password :</label></td>
+                    <td><input type="password" name="" id="password" placeholder="Enter the password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="button-align"><button type="button" onclick="validate()" >Submit</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p id="demo" ></p></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function validate(){
+            let x=document.getElementById("name").value;
+            let y=document.getElementById("password").value;
+            if (x=="siva" && y=="1234"){
+                
+                window.open("two.html");
+            }
+            else{
+                document.getElementById("demo").innerHTML="Invalid Name and Password";
+            }
+        }
+    </script>
+</body>
+</html>
