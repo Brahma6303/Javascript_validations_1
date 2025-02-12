@@ -12,3 +12,10 @@ function validate(){
         ;
     }
 }
+
+function changing(){
+    let x=document.getElementsByClassName('name');
+    for(let i=0;i<x.length;i++){
+        x[i].style.color="red";
+    };
+};

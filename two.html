@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="one.css">
     <style>
         h1{
             font-family: sans-serif;
@@ -22,6 +23,14 @@
     <center>
         <h1 id="demo1"></h1>
         <img src="https://i.pinimg.com/originals/5e/78/af/5e78affab2547d678e4c5458dd931381.gif" alt="">
+        <br><br>
+        <button type="button" onclick="document.getElementById('demo1').style.color='red'" >Change Color</button>
+        <input type="radio" name="click" onclick="document.getElementById('demo1').style.color='Blue'">
+        <label for=""><b class="color">Blue</b></label>
+        <input type="radio" name="click" onclick="document.getElementById('demo1').style.color='Green'">
+        <label for=""><b class="color">Green</b></label>
+        <input type="radio" name="click" onclick="document.getElementById('demo1').style.color='Yellow'">
+        <label for=""><b class="color">Yellow</b></label>
     </center>
     <script>
     window.onload = function() {
@@ -32,6 +41,8 @@
             document.getElementById("demo1").textContent = "No text found!";
         }
     };
+
+   
 </script>
 </body>
 </html>
