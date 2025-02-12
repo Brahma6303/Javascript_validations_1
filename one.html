@@ -19,26 +19,20 @@
                     <td><input type="password" name="" id="password" placeholder="Enter the password"></td>
                 </tr>
                 <tr>
+                    <td><label class="name">Enter Message :</label></td>
+                    <td><input type="text" name="" id="message" placeholder="Enter the message"></td>
+                </tr>
+                <tr>
                     <td colspan="2" id="button-align"><button type="button" onclick="validate()" >Submit</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><p id="demo" ></p></td>
+                    
                 </tr>
             </table>
         </form>
     </div>
-    <script>
-        function validate(){
-            let x=document.getElementById("name").value;
-            let y=document.getElementById("password").value;
-            if (x=="siva" && y=="1234"){
-                
-                window.open("two.html");
-            }
-            else{
-                document.getElementById("demo").innerHTML="Invalid Name and Password";
-            }
-        }
-    </script>
+    
+    <script src="one.js"></script>
 </body>
 </html>

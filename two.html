@@ -20,8 +20,18 @@
 </head>
 <body>
     <center>
-        <h1 style="color:brown">Welcome Siva</h1>
+        <h1 id="demo1"></h1>
         <img src="https://i.pinimg.com/originals/5e/78/af/5e78affab2547d678e4c5458dd931381.gif" alt="">
     </center>
+    <script>
+    window.onload = function() {
+        let text = localStorage.getItem("sharedText");
+        if (text) {
+            document.getElementById("demo1").textContent = text;
+        } else {
+            document.getElementById("demo1").textContent = "No text found!";
+        }
+    };
+</script>
 </body>
 </html>
